@@ -26,9 +26,9 @@ export default function Movie() {
 
             <h2 className="font-[700] text-[1.125rem]" data-testid="movie-title">{movie?.title}</h2>
 
-            <small className="flex items-center gap-4 font-[700] text-[0.75rem]" data-testid="movie-release-date">{movie?.release_date}</small>
+            <small className="flex items-center gap-4 font-[700] text-lg" data-testid="movie-release-date">{movie?.release_date?.slice(0, 4)}</small>
 
-            <small className="font-[600]" data-testid="movie-runtime">{movie.runtime} mins</small>
+            <small className="font-[600] text-lg" data-testid="movie-runtime">{movie.runtime}mins</small>
 
             <p data-testid="movie-overview">{movie?.overview}</p>
         </>

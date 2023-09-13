@@ -47,7 +47,7 @@ export default function Movies() {
 
                                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className={movie.title} data-testid="movie-poster" />
 
-                                <small className="text-[0.75rem] leading-4 font-[700]" data-testid="movie-release-date">{movie?.release_date}</small>
+                                <small className="text-[1rem] leading-4 font-[700]" data-testid="movie-release-date">{movie?.release_date?.slice(0, 4)}</small>
 
                                 <h2 className="font-[700] text-[1.125rem]" data-testid="movie-title">{movie.title}</h2>
                             </Link>
