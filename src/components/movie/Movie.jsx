@@ -21,7 +21,7 @@ export default function Movie() {
     })
 
     const oneMovie = (
-        <>
+        <div data-testid="movie-card">
             <img src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`} alt={movie?.title} data-testid="movie-poster" />
 
             <h2 className="font-[700] text-[1.125rem]" data-testid="movie-title">{movie?.title}</h2>
@@ -31,7 +31,7 @@ export default function Movie() {
             <small className="font-[600] text-lg" data-testid="movie-runtime">{movie.runtime}mins</small>
 
             <p data-testid="movie-overview">{movie?.overview}</p>
-        </>
+        </div>
     )
 
 
